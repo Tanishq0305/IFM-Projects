@@ -1,0 +1,20 @@
+<GVL>
+  <Declarations><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	array1:ARRAY [0..7] OF INT;
+	
+END_VAR]]></Declarations>
+  <NetvarSettings Protocol="UDP">
+    <ListIdentifier>1</ListIdentifier>
+    <Pack>True</Pack>
+    <Checksum>False</Checksum>
+    <Acknowledge>False</Acknowledge>
+    <CyclicTransmission>True</CyclicTransmission>
+    <TransmissionOnChange>False</TransmissionOnChange>
+    <TransmissionOnEvent>False</TransmissionOnEvent>
+    <Interval>T#50ms</Interval>
+    <MinGap>T#20ms</MinGap>
+    <EventVariable>
+    </EventVariable>
+  </NetvarSettings>
+</GVL>

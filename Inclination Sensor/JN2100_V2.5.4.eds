@@ -1,0 +1,1556 @@
+[FileInfo]
+CreatedBy=ifm dekoyebe
+ModifiedBy=ifm dekoyebe
+Description=EDS for JN2100 devices (Two Axis Inclination Sensor)
+CreationTime=09:02AM
+CreationDate=10-24-2017
+ModificationTime=09:02AM
+ModificationDate=10-24-2017
+FileName=JN2100_V2.5.eds
+FileVersion=0x01
+FileRevision=0x01
+EDSVersion=4.1
+
+[DeviceInfo]
+VendorName=ifm electornic GmbH
+VendorNumber=0x0069666D
+ProductName=JN2100
+ProductNumber=0x00000000
+RevisionNumber=0x000000AA
+OrderCode=JN2100
+BaudRate_10=1
+BaudRate_20=1
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=1
+BaudRate_1000=1
+SimpleBootUpMaster=0
+SimpleBootUpSlave=1
+Granularity=8
+DynamicChannelsSupported=0
+CompactPDO=23
+GroupMessaging=0
+NrOfRXPDO=0
+NrOfTXPDO=4
+LSS_Supported=1
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=0
+Dummy0004=0
+Dummy0005=0
+Dummy0006=0
+Dummy0007=0
+
+[Comments]
+Lines=12
+Line1=JN2100
+Line2=Two Axis Inclination Sensor
+Line3=
+Line4=Interface: CANOpen
+Line5=
+Line6=JN2100
+Line7=Angular Range: 0-360° / +- 180°
+Line8=Axes: 2
+Line9=Resolution: 0.001°
+Line10=Accuracy: 0.5°
+Line11=Connection: 2 x M12 5pin
+Line12=Operation voltage: 9.2 - 30 V DC
+
+[MandatoryObjects]
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+[1000]
+ParameterName=Device Type
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x4019A
+PDOMapping=0
+
+[1001]
+ParameterName=Error Register
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+PDOMapping=0
+
+[1018]
+ParameterName=Identity Object
+ObjectType=0x9
+SubNumber=5
+
+[1018sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=4
+PDOMapping=0
+LowLimit=1
+HighLimit=4
+
+[1018sub1]
+ParameterName=Vendor Id
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0069666D
+PDOMapping=0
+
+[1018sub2]
+ParameterName=Product Code
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[1018sub3]
+ParameterName=Revision number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x000000AA
+PDOMapping=0
+
+[1018sub4]
+ParameterName=Serial number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[OptionalObjects]
+SupportedObjects=32
+1=0x1003
+2=0x1005
+3=0x1008
+4=0x1009
+5=0x100A
+6=0x100C
+7=0x100D
+8=0x1010
+9=0x1011
+10=0x1014
+11=0x1015
+12=0x1017
+13=0x1029
+14=0x1200
+15=0x1800
+16=0x1801
+17=0x1802
+18=0x1803
+19=0x1A00
+20=0x1A01
+21=0x1A02
+22=0x1A03
+23=0x1F80
+24=0x6000
+25=0x6010
+26=0x6011
+27=0x6020
+28=0x6021
+29=0x6110
+30=0x6111
+31=0x6120
+32=0x6121
+
+[1003]
+ParameterName=Predefined Error Field
+ObjectType=0x8
+SubNumber=51
+
+[1003sub0]
+ParameterName=Number of Errors
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1003sub1]
+ParameterName=Standard Error Field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub2]
+ParameterName=Standard Error Field_2
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub3]
+ParameterName=Standard Error Field_3
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub4]
+ParameterName=Standard Error Field_4
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub5]
+ParameterName=Standard Error Field_5
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub6]
+ParameterName=Standard Error Field_6
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub7]
+ParameterName=Standard Error Field_7
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub8]
+ParameterName=Standard Error Field_8
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub9]
+ParameterName=Standard Error Field_9
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003subA]
+ParameterName=Standard Error Field_a
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003subB]
+ParameterName=Standard Error Field_b
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003subC]
+ParameterName=Standard Error Field_c
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003subD]
+ParameterName=Standard Error Field_d
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003subE]
+ParameterName=Standard Error Field_e
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003subF]
+ParameterName=Standard Error Field_f
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub10]
+ParameterName=Standard Error Field_10
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub11]
+ParameterName=Standard Error Field_11
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub12]
+ParameterName=Standard Error Field_12
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub13]
+ParameterName=Standard Error Field_13
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub14]
+ParameterName=Standard Error Field_14
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub15]
+ParameterName=Standard Error Field_15
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub16]
+ParameterName=Standard Error Field_16
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub17]
+ParameterName=Standard Error Field_17
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub18]
+ParameterName=Standard Error Field_18
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub19]
+ParameterName=Standard Error Field_19
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub1A]
+ParameterName=Standard Error Field_1a
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub1B]
+ParameterName=Standard Error Field_1b
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub1C]
+ParameterName=Standard Error Field_1c
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub1D]
+ParameterName=Standard Error Field_1d
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub1E]
+ParameterName=Standard Error Field_1e
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub1F]
+ParameterName=Standard Error Field_1f
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub20]
+ParameterName=Standard Error Field_20
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub21]
+ParameterName=Standard Error Field_21
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub22]
+ParameterName=Standard Error Field_22
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub23]
+ParameterName=Standard Error Field_23
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub24]
+ParameterName=Standard Error Field_24
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub25]
+ParameterName=Standard Error Field_25
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub26]
+ParameterName=Standard Error Field_26
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub27]
+ParameterName=Standard Error Field_27
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub28]
+ParameterName=Standard Error Field_28
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub29]
+ParameterName=Standard Error Field_29
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub2A]
+ParameterName=Standard Error Field_2a
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub2B]
+ParameterName=Standard Error Field_2b
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub2C]
+ParameterName=Standard Error Field_2c
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub2D]
+ParameterName=Standard Error Field_2d
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub2E]
+ParameterName=Standard Error Field_2e
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub2F]
+ParameterName=Standard Error Field_2f
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub30]
+ParameterName=Standard Error Field_30
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub31]
+ParameterName=Standard Error Field_31
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub32]
+ParameterName=Standard Error Field_32
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1005]
+ParameterName=COB ID SYNC
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00000080
+PDOMapping=0
+LowLimit=0x00000080
+
+[1008]
+ParameterName=Manufacturer Device Name
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+DefaultValue=JN2100
+PDOMapping=0
+
+[1009]
+ParameterName=Manufacturer Hardware Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[100A]
+ParameterName=Manufacturer Software Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[100C]
+ParameterName=Guard Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[100D]
+ParameterName=Life Time Factor
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x00
+PDOMapping=0
+
+[1010]
+ParameterName=Store Parameter Field
+ObjectType=0x8
+SubNumber=2
+
+[1010sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[1010sub1]
+ParameterName=Save all Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+
+[1011]
+ParameterName=Restore Default Parameters
+ObjectType=0x8
+SubNumber=2
+
+[1011sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[1011sub1]
+ParameterName=Restore all Default Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1014]
+ParameterName=COB ID EMCY
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x80
+PDOMapping=0
+LowLimit=0x00000080
+HighLimit=0xBFFFFFFF
+
+[1015]
+ParameterName=Inhibit Time Emergency
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1017]
+ParameterName=Producer Heartbeat Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1029]
+ParameterName=Error behaviour
+ObjectType=0x8
+SubNumber=2
+
+[1029sub0]
+ParameterName=Nr of Error Classes
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[1029sub1]
+ParameterName=Communication Error
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1200]
+ParameterName=Server SDO Parameter 0
+ObjectType=0x9
+SubNumber=3
+
+[1200sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+LowLimit=0x02
+HighLimit=0x02
+
+[1200sub1]
+ParameterName=COB ID Client to Server
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x600
+PDOMapping=0
+
+[1200sub2]
+ParameterName=COB ID Server to Client
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x580
+PDOMapping=0
+
+[1800]
+ParameterName=Transmit PDO Communication Parameter 0
+ObjectType=0x9
+SubNumber=6
+
+[1800sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+
+[1800sub1]
+ParameterName=COB ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x180
+PDOMapping=0
+LowLimit=0x00000080
+HighLimit=0xFFFFFFFF
+
+[1800sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1800sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[1800sub4]
+ParameterName=Compatibility Entry
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1800sub5]
+ParameterName=Event Timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0A
+PDOMapping=0
+
+[1801]
+ParameterName=Transmit PDO Communication Parameter 1
+ObjectType=0x9
+SubNumber=6
+
+[1801sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+
+[1801sub1]
+ParameterName=COB ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x280
+PDOMapping=0
+LowLimit=0x00000080
+HighLimit=0xFFFFFFFF
+
+[1801sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1801sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[1801sub4]
+ParameterName=Compatibility Entry
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1801sub5]
+ParameterName=Event Timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0A
+PDOMapping=0
+
+[1802]
+ParameterName=Transmit PDO Communication Parameter 2
+ObjectType=0x9
+SubNumber=6
+
+[1802sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+
+[1802sub1]
+ParameterName=COB ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x380
+PDOMapping=0
+LowLimit=0x00000080
+HighLimit=0xFFFFFFFF
+
+[1802sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1802sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[1802sub4]
+ParameterName=Compatibility Entry
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1802sub5]
+ParameterName=Event Timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0A
+PDOMapping=0
+
+[1803]
+ParameterName=Transmit PDO Communication Parameter 3
+ObjectType=0x9
+SubNumber=5
+
+[1803sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+LowLimit=0x02
+HighLimit=0x06
+
+[1803sub1]
+ParameterName=COB ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x480
+PDOMapping=0
+LowLimit=0x00000080
+HighLimit=0xFFFFFFFF
+
+[1803sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1803sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[1803sub5]
+ParameterName=Event Timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0A
+PDOMapping=0
+
+[1A00]
+ParameterName=Transmit PDO Mapping Parameter 0
+ObjectType=0x9
+SubNumber=9
+
+[1A00sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=8
+
+[1A00sub1]
+ParameterName=PDO Mapping Entry
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x60100010
+PDOMapping=0
+
+[1A00sub2]
+ParameterName=PDO Mapping Entry_2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x60200010
+PDOMapping=0
+
+[1A00sub3]
+ParameterName=PDO Mapping Entry_3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A00sub4]
+ParameterName=PDO Mapping Entry_4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A00sub5]
+ParameterName=PDO Mapping Entry_5
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A00sub6]
+ParameterName=PDO Mapping Entry_6
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A00sub7]
+ParameterName=PDO Mapping Entry_7
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A00sub8]
+ParameterName=PDO Mapping Entry_8
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A01]
+ParameterName=Transmit PDO Mapping Parameter 1
+ObjectType=0x9
+SubNumber=9
+
+[1A01sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=8
+
+[1A01sub1]
+ParameterName=PDO Mapping Entry
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61100020
+PDOMapping=0
+
+[1A01sub2]
+ParameterName=PDO Mapping Entry_2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61200020
+PDOMapping=0
+
+[1A01sub3]
+ParameterName=PDO Mapping Entry_3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A01sub4]
+ParameterName=PDO Mapping Entry_4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A01sub5]
+ParameterName=PDO Mapping Entry_5
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A01sub6]
+ParameterName=PDO Mapping Entry_6
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A01sub7]
+ParameterName=PDO Mapping Entry_7
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A01sub8]
+ParameterName=PDO Mapping Entry_8
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A02]
+ParameterName=Transmit PDO Mapping Parameter 2
+ObjectType=0x9
+SubNumber=9
+
+[1A02sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=8
+
+[1A02sub1]
+ParameterName=PDO Mapping Entry
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x5C100020
+PDOMapping=0
+
+[1A02sub2]
+ParameterName=PDO Mapping Entry_2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x5C110020
+PDOMapping=0
+
+[1A02sub3]
+ParameterName=PDO Mapping Entry_3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A02sub4]
+ParameterName=PDO Mapping Entry_4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A02sub5]
+ParameterName=PDO Mapping Entry_5
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A02sub6]
+ParameterName=PDO Mapping Entry_6
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A02sub7]
+ParameterName=PDO Mapping Entry_7
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A02sub8]
+ParameterName=PDO Mapping Entry_8
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A03]
+ParameterName=Transmit PDO Mapping Parameter 3
+ObjectType=0x9
+SubNumber=9
+
+[1A03sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=3
+PDOMapping=0
+LowLimit=0
+HighLimit=8
+
+[1A03sub1]
+ParameterName=PDO Mapping Entry
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x5D100010
+PDOMapping=0
+
+[1A03sub2]
+ParameterName=PDO Mapping Entry_2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x5D110010
+PDOMapping=0
+
+[1A03sub3]
+ParameterName=PDO Mapping Entry_3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x5D120010
+PDOMapping=0
+
+[1A03sub4]
+ParameterName=PDO Mapping Entry_4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A03sub5]
+ParameterName=PDO Mapping Entry_5
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A03sub6]
+ParameterName=PDO Mapping Entry_6
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A03sub7]
+ParameterName=PDO Mapping Entry_7
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1A03sub8]
+ParameterName=PDO Mapping Entry_8
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1F80]
+ParameterName=NMTStartup
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[6000]
+ParameterName=Resolution
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=100
+PDOMapping=0
+LowLimit=1
+HighLimit=1000
+
+[6010]
+ParameterName=Slope long16
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[6011]
+ParameterName=Slope long16 operating parameter
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[6020]
+ParameterName=Slope lateral16
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[6021]
+ParameterName=Slope lateral16 operating parameter
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[6110]
+ParameterName=Slope long32
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[6111]
+ParameterName=Slope long32 operating parameter
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[6120]
+ParameterName=Slope lateral32
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[6121]
+ParameterName=Slope lateral32 operating parameter
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[ManufacturerObjects]
+SupportedObjects=25
+1=0x2000
+2=0x2001
+3=0x2002
+4=0x2040
+5=0x2041
+6=0x2042
+7=0x2043
+8=0x2044
+9=0x2045
+10=0x2046
+11=0x2047
+12=0x2048
+13=0x2049
+14=0x204A
+15=0x207F
+16=0x3000
+17=0x4001
+18=0x4004
+19=0x4080
+20=0x4081
+21=0x5C10
+22=0x5C11
+23=0x5D10
+24=0x5D11
+25=0x5D12
+
+[2000]
+ParameterName=Node ID
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=10
+PDOMapping=0
+LowLimit=1
+HighLimit=127
+
+[2001]
+ParameterName=Baudrate [kbit]
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=125
+PDOMapping=0
+LowLimit=10
+HighLimit=1000
+
+[2002]
+ParameterName=Microcontroller Reset
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2040]
+ParameterName=Quadrant Correction
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[2041]
+ParameterName=Heater On
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2042]
+ParameterName=Teach Index
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[2043]
+ParameterName=FIR Filter Angle
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[2044]
+ParameterName=Angle Calculation Algorithm
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=3
+
+[2045]
+ParameterName=CAN 120 Ohm Resistor
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2046]
+ParameterName=Zero Index
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[2047]
+ParameterName=Measurement Output
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=3
+
+[2048]
+ParameterName=Axis Selection v eff - a peak
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=7
+PDOMapping=0
+LowLimit=1
+HighLimit=7
+
+[2049]
+ParameterName=FIR Filter v eff - a peak
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=5
+PDOMapping=0
+LowLimit=0
+HighLimit=5
+
+[204A]
+ParameterName=Measurement Range v eff - a peak
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[207F]
+ParameterName=Factory Reset
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[3000]
+ParameterName=Parameterization Key
+ObjectType=0x7
+DataType=0x0009
+AccessType=rw
+DefaultValue=D0UfZEgRKHAl5Ag=
+PDOMapping=0
+
+[4001]
+ParameterName=Configuration 1 (Manufacturer only)
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[4004]
+ParameterName=MEMS Self Test
+ObjectType=0x9
+SubNumber=3
+
+[4004sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+
+[4004sub1]
+ParameterName=Activate Self Test
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[4004sub2]
+ParameterName=Self Test Register
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=7
+
+[4080]
+ParameterName=Temperature MEMS [1/10 °C]
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=0
+
+[4081]
+ParameterName=Heater Power [mW]
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[5C10]
+ParameterName=v effektive vector magnitude
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=1
+
+[5C11]
+ParameterName=a peak vector magnitude
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=1
+
+[5D10]
+ParameterName=a x vector
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[5D11]
+ParameterName=a y vector
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[5D12]
+ParameterName=a z vector
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
